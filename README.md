@@ -36,3 +36,7 @@ There's an API that exists to help you with this. Someone spent some time collec
 ```
 http://dinomatch.roguewolf.tech/api/dinosuar
 ```
+
+## Nice to Have
+- Add styles to your page
+- Make it responsive 
