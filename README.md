@@ -20,7 +20,15 @@ This should be built using a modern javascript library, such as Vue or React.
 **Min Number of Colors**: 5
 
 ## Logic
-If the user's name is greater than 30 characters then they should be suggested a 
+If the user's name is greater than 30 characters then they should be suggested a Brontosaurus.
+
+If the user's name is greater than 15 characters and less than 20, and the user's favorite color is brown, yellow, or orange then they should be suggested a Triceratops.
+
+If the user's name is greater than 10 and less than 20 characters, and the user's favorite color is red, blue, or pink, then they should be recommended a Torosaurus.
+
+If the user's favorite color is green, no matter name length, the user should be recommended the Trex, 
+
+All other situations, the users should be recommended the Stegasaurus. 
 
 ## Available Resources
 ### API
