@@ -33,9 +33,24 @@ All other situations, the users should be recommended the Stegasaurus.
 ## Available Resources
 ### API
 There's an API that exists to help you with this. Someone spent some time collecting a list of dinosuars and images.
+
+GET api/dinosaur
 ```
-http://dinomatch.roguewolf.tech/api/dinosuar
+http://dinomatch.roguewolf.tech/api/dinosaur
 ```
+Retrieve a list of all of the available Dinosaurs
+
+GET api/dinosaur/{1}
+```
+http://dinomatch.roguewolf.tech/api/dinosaur/1
+```
+Retrieve a specific Dinosaur based on numeric ID
+
+POST api/dinosaur/match
+```
+http://dinomatch.roguewolf.tech/api/dinosaur/match
+```
+Retrieve the specific dinosaur that matches logic criteria by passing in the `name` and the `color` to the endpoint.
 
 ## Nice to Have
 - Add styles to your page
