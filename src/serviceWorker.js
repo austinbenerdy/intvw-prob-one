@@ -5,7 +5,7 @@
 // it offline capabilities. However, it also means that developers (and users)
 // will only see deployed updates on subsequent visits to a page, after all the
 // existing tabs open on the page have been closed, since previously cached
-// resources are updated in the background.
+// helpers are updated in the background.
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
@@ -66,11 +66,11 @@ function registerValidSW(swUrl, config) {
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
-              // At this point, the updated precached content has been fetched,
+              // At this point, the updated precached contentContainer has been fetched,
               // but the previous service worker will still serve the older
-              // content until all client tabs are closed.
+              // contentContainer until all client tabs are closed.
               console.log(
-                'New content is available and will be used when all ' +
+                'New contentContainer is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
 

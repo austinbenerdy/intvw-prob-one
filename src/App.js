@@ -2,23 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import apiClient from './helpers/apiClient';
+import applicationContext from "./context/applicationContext";
+import ContentContainer from "./components/ContentContainer";
+
 function App() {
+  const restApi = new apiClient();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <applicationContext.Provider value={{api: restApi}}>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <ContentContainer />
+        </header>
+      </applicationContext.Provider>
     </div>
   );
 }
